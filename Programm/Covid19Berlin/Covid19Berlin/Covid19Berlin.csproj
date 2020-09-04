@@ -69,6 +69,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="model\Item.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -95,10 +96,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Control\" />
-    <Folder Include="Model\" />
-    <Folder Include="Ressources\" />
-    <Folder Include="View\" />
+    <Folder Include="control\" />
+    <Folder Include="view\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ressources\statistikdaten.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
