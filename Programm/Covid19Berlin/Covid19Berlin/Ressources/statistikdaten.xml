@@ -4,7 +4,7 @@
     <success/>
   </messages>
   <results>
-    <count>13</count>
+    <count>12</count>
     <items_per_page/>
   </results>
   <index type="array">
@@ -89,8 +89,6 @@
       <genesen>681</genesen>
     </item>
     <item original="10">
-    </item>
-    <item original="11">
       <id>34</id>
       <bezirk>Treptow-Köpenick</bezirk>
       <fallzahl>482</fallzahl>
@@ -98,7 +96,7 @@
       <inzidenz>176.1</inzidenz>
       <genesen>457</genesen>
     </item>
-    <item original="12">
+    <item original="11">
       <id>37</id>
       <bezirk>Berlin</bezirk>
       <fallzahl>11188</fallzahl>
@@ -107,5 +105,4 @@
       <genesen>10220</genesen>
     </item>
   </index>
-  <item/>
 </xml>

@@ -9,17 +9,17 @@ namespace Covid19Berlin.model
     class Item
     {
         private readonly int id;
-        private readonly string region;
-        private readonly double fallzahlen;
+        private readonly string bezirk;
+        private readonly double fallzahl;
         private readonly double differenz;
         private readonly double inzidenz;
         private readonly double genesen;
 
-        public Item(int id, string region, double fallzahlen, double differenz, double inzidenz, double genesen)
+        public Item(int id, string bezirk, double fallzahl, double differenz, double inzidenz, double genesen)
         {
             this.id = id;
-            this.region = region;
-            this.fallzahlen = fallzahlen;
+            this.bezirk = bezirk;
+            this.fallzahl = fallzahl;
             this.differenz = differenz;
             this.inzidenz = inzidenz;
             this.genesen = genesen;
@@ -28,31 +28,37 @@ namespace Covid19Berlin.model
         public int Id
         {
             get { return id; }
+           // set { id = value; }
         }
 
-        public string Region
+        public string Bezirk
         {
-            get { return region; }
+            get { return bezirk; }
+           // set { bezirk = value; }
         }
 
-        public double Fallzahlen
+        public double Fallzahl
         {
-            get { return fallzahlen; }
+            get { return fallzahl; }
+           // set { fallzahl = value; }
         }
 
         public double Differenz
         {
             get { return differenz; }
+           // set { differenz = value; }
         }
 
         public double Inzidenz
         {
             get { return inzidenz; }
+           // set { inzidenz = value; }
         }
 
         public double Genesen
         {
             get { return genesen; }
+          //  set { genesen = value; }
         }
 
 
