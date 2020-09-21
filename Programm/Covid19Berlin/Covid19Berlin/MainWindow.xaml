@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:Covid19Berlin"
         mc:Ignorable="d"
         Title="Covid19 in Berlin" Height="600" Width="1200"
-        WindowStartupLocation="CenterScreen"
+        WindowStartupLocation="CenterScreen" Loaded="Window_Loaded"
         >
     <Grid>
         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
             <UserControl Height="250" Width="250" BorderBrush="Gray" BorderThickness="2" HorizontalAlignment="Left" Margin="20,0,0,20" VerticalAlignment="Top">
-                <StackPanel>
+                <StackPanel x:Name="pnlBerlinGesamt">
                     <Label Content="Gesamtzahl Berlin" Margin="0,20,0,20" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
                     
                     <Label Content="Fallzahlen" FontWeight="Bold" HorizontalAlignment="Center"/>
@@ -28,7 +28,7 @@
                 </StackPanel>
             </UserControl>
             <UserControl Height="250" Width="250" BorderBrush="Gray" BorderThickness="2" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Bottom">
-                <StackPanel>
+                <StackPanel x:Name="pnlAktuellerBezirk">
                     <Label x:Name="lblBezirkname" Margin="0,20,0,20" Content="[Bezirk]" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
 
                     <Label Content="Fallzahlen" FontWeight="Bold" HorizontalAlignment="Center"/>
@@ -45,14 +45,14 @@
                 </StackPanel>
             </UserControl>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel x:Name="pnlKarte" HorizontalAlignment="Center" VerticalAlignment="Center">
             <UserControl Height="520" Width="600" BorderBrush="Gray" BorderThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Image Source="./Ressources/berlin_karte.png"/>
+                <Image Source="./ressources/berlin_karte.png" Stretch="Fill" Margin="5,5,5,5" />
             </UserControl>
         </StackPanel>
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center">
             <UserControl Height="520" Width="250" BorderBrush="Gray" BorderThickness="2" HorizontalAlignment="Center" Margin="0,0,20,0" VerticalAlignment="Center">
-                <StackPanel>
+                <StackPanel x:Name="pnlListeAlleBezirke">
                     <Label Margin="0,20,0,20" Content="Bezirke" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
                 </StackPanel>
             </UserControl>

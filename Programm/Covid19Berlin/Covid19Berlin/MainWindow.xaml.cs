@@ -24,5 +24,12 @@ namespace Covid19Berlin
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            XMLReader reader = new XMLReader();
+            reader.XmlTextRead();
+
+        }
     }
 }
