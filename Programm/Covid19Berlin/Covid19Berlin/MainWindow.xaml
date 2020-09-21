@@ -5,8 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Covid19Berlin"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Covid19 in Berlin" Height="600" Width="1200"
+        WindowStartupLocation="CenterScreen"
+        >
     <Grid>
-        
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
+            <UserControl Height="250" Width="250" BorderBrush="Gray" BorderThickness="2" HorizontalAlignment="Left" Margin="20,0,0,20" VerticalAlignment="Top">
+                <StackPanel>
+                    <Label Content="Gesamtzahl Berlin" Margin="0,20,0,20" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    
+                    <Label Content="Fallzahlen" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <Label x:Name="lblGesFallzahlen" HorizontalAlignment="Center"/>
+
+                    <Label Content="Differenz" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <Label x:Name="lblGesDifferenz" HorizontalAlignment="Center"/>
+
+                    <Label Content="Veränderung zum Vortag" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <Label x:Name="lblGesVeraenderung" HorizontalAlignment="Center"/>
+
+                    <Label Content="Genesen" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <Label x:Name="lblGesGenesen" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </UserControl>
+            <UserControl Height="250" Width="250" BorderBrush="Gray" BorderThickness="2" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Bottom">
+                <StackPanel>
+                    <Label x:Name="lblBezirkname" Margin="0,20,0,20" Content="[Bezirk]" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+
+                    <Label Content="Fallzahlen" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <Label x:Name="lblFallzahlen" HorizontalAlignment="Center"/>
+
+                    <Label Content="Differenz" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <Label x:Name="lblDifferenz" HorizontalAlignment="Center"/>
+
+                    <Label Content="Veränderung zum Vortag" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <Label x:Name="lblVeraenderung" HorizontalAlignment="Center"/>
+
+                    <Label Content="Genesen" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <Label x:Name="lblGenesen" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </UserControl>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <UserControl Height="520" Width="600" BorderBrush="Gray" BorderThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Image Source="./Ressources/berlin_kart.png"/>
+            </UserControl>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center">
+            <UserControl Height="520" Width="250" BorderBrush="Gray" BorderThickness="2" HorizontalAlignment="Center" Margin="0,0,20,0" VerticalAlignment="Center">
+                <StackPanel>
+                    <Label Margin="0,20,0,20" Content="Bezirke" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </UserControl>
+        </StackPanel>
     </Grid>
 </Window>
