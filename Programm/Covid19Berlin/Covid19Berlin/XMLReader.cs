@@ -1,4 +1,5 @@
-﻿using Covid19Berlin.model;
+﻿using Covid19Berlin.control;
+using Covid19Berlin.model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,17 +17,17 @@ namespace Covid19Berlin
             List<Item> itemListe = new List<Item>();
 
             XmlDocument xmlDatei = new XmlDocument();
-            xmlDatei.Load("../../ressources/statistikdaten.xml");
+            xmlDatei.Load(Konstanten.DEFAULTXML);
 
             foreach (XmlNode nodeItem in xmlDatei.SelectNodes("//item"))
             {
                 Item item = new Item(
-                    Convert.ToInt32(nodeItem["id"].InnerText), 
-                    nodeItem["bezirk"].InnerText, 
-                    Convert.ToDouble(nodeItem["fallzahl"].InnerText),
-                    Convert.ToDouble(nodeItem["differenz"].InnerText),
-                    Convert.ToDouble(nodeItem["inzidenz"].InnerText),
-                    Convert.ToDouble(nodeItem["genesen"].InnerText)
+                    Convert.ToInt32(nodeItem[Konstanten.ID].InnerText), 
+                    nodeItem[Konstanten.BEZIRK].InnerText, 
+                    Convert.ToDouble(nodeItem[Konstanten.FALLZAHL].InnerText),
+                    Convert.ToDouble(nodeItem[Konstanten.DIFFERENZ].InnerText),
+                    Convert.ToDouble(nodeItem[Konstanten.INZIDENZ].InnerText),
+                    Convert.ToDouble(nodeItem[Konstanten.GENESEN].InnerText)
                     );
                 itemListe.Add(item);
             }

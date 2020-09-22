@@ -60,6 +60,7 @@ namespace Covid19Berlin
                 btnBezirk.HorizontalAlignment = HorizontalAlignment.Center;
                 btnBezirk.BorderThickness = new Thickness(2);
                 btnBezirk.Margin = new Thickness(0, 1, 0, 0);
+                //btnBezirk.BorderBrush = 
                 pnlListeAlleBezirke.Children.Add(btnBezirk);
                 pnlListeAlleBezirke.UpdateLayout();
 
