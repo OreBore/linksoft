@@ -55,12 +55,12 @@ namespace Covid19Berlin
                 btnBezirk.Content = bezirkName;
                 btnBezirk.Name = "b" + Convert.ToString(index);
                 btnBezirk.Click += new RoutedEventHandler(BtnBezirk_Click);
+                btnBezirk.FontSize = 16;
                 btnBezirk.Height = 38;
-                btnBezirk.Width = 200;
+                btnBezirk.Width = 210;
                 btnBezirk.HorizontalAlignment = HorizontalAlignment.Center;
-                btnBezirk.BorderThickness = new Thickness(2);
                 btnBezirk.Margin = new Thickness(0, 1, 0, 0);
-                //btnBezirk.BorderBrush = 
+
                 pnlListeAlleBezirke.Children.Add(btnBezirk);
                 pnlListeAlleBezirke.UpdateLayout();
 
@@ -72,6 +72,7 @@ namespace Covid19Berlin
             Button btn = sender as Button;
             int index = Convert.ToInt32(btn.Name.Substring(1));
 
+            btn.Background = Brushes.LightGreen;
             lblBezirkname.Content = itemListe[index].Bezirk;
             lblFallzahlen.Content = itemListe[index].Fallzahl;
             lblDifferenz.Content = itemListe[index].Differenz;

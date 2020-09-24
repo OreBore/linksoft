@@ -27,3 +27,4 @@ C:\Users\Flexa\source\repos\linksoft\Programm\Covid19Berlin\Covid19Berlin\obj\De
 C:\Users\Flexa\source\repos\linksoft\Programm\Covid19Berlin\Covid19Berlin\obj\Debug\Covid19Berlin.csproj.CoreCompileInputs.cache
 C:\Users\Flexa\source\repos\linksoft\Programm\Covid19Berlin\Covid19Berlin\obj\Debug\Covid19Berlin.exe
 C:\Users\Flexa\source\repos\linksoft\Programm\Covid19Berlin\Covid19Berlin\obj\Debug\Covid19Berlin.pdb
+C:\Users\Flexa\source\repos\linksoft\Programm\Covid19Berlin\Covid19Berlin\obj\Debug\Covid19Berlin.csprojAssemblyReference.cache
