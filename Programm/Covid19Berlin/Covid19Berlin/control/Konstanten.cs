@@ -16,6 +16,6 @@ namespace Covid19Berlin.control
         public const string BEZIRK = "bezirk";
         public const string DEFAULTXML = "../../ressources/statistikdaten.xml";
         
-
+       
     }
 }
